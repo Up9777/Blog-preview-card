@@ -1,0 +1,125 @@
+/* style.css */
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(211, 211, 89);
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background-color:rgb(255, 255, 255);
+    padding: 20px;
+    width: 90%; /* Responsive width */
+    max-width: 300px; /* Set maximum width for desktop */
+    height: auto; /* Adjust height based on content */
+    box-shadow: 8px 14px 14px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:left;
+    margin: 0 auto; /* Ensure it's centered horizontally */
+}
+
+.learning {
+    width: 95px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    background-color: rgb(224, 224, 19);
+    justify-content: center;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+
+.learn{
+    margin-top: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:18px;
+    font-weight: 600;
+}
+
+.publish{
+    font-size: large;
+    opacity: 0.6;
+}
+
+.htm{
+    font-size: 27px;
+    opacity: 0.95;
+    margin-top: -5px;
+}
+
+.desc{
+    font-size:18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0.6;
+    margin-top: -5px;
+}
+
+.admind{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+}
+
+.admin{
+    margin-left: 8px;
+    font-size: medium;
+    opacity: 0.7;
+}
+.h1 {
+    margin-top: 25px;
+}
+
+.h3 {
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 500;
+    color: rgb(68, 66, 66);
+}
+
+.img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+        padding: 20px;
+    }
+
+    .img {
+        max-width: 350px;
+    }
+}
+
+/* For large tablets and small desktops */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .card {
+        width: 80%;
+        max-width: 380px;
+    }
+}
+
+/* Large desktops */
+@media (min-width: 1200px) {
+    .card {
+        max-width: 400px;
+        margin: 0 auto; /* Ensures it's centered */
+    }
+
+    .img {
+        max-width: 400px;
+    }
+}
